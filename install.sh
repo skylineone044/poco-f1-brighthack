@@ -122,13 +122,13 @@ REPLACE="
 # Set what you want to display when installing your module
 
 print_modname() {
-  ui_print "*******************************"
-  ui_print "       OP7T BrightHack         "
-  ui_print "                               "
-  ui_print "        by @geofferey          "
-  ui_print "                               "
-  ui_print " https://github.com/geofferey  "
-  ui_print "*******************************"
+  ui_print "**********************************************"
+  ui_print "              POCO F1 BrightHack              "
+  ui_print "               by skylineone044               "
+  ui_print "                                              "
+  ui_print "                  based on                    "
+  ui_print " https://github.com/Geofferey/op7t-brighthack "
+  ui_print "**********************************************"
 }
 
 # Copy/extract your module files into $MODPATH in on_install.
@@ -149,7 +149,7 @@ set_permissions() {
   set_perm_recursive $MODPATH 0 0 0755 0644
   set_perm $MODPATH/service.sh 0 0 0755
   set_perm $MODPATH/brighthack.sh 0 0 0755
-  
+
   # set_perm  $MODPATH/system/lib/libmedia_legacy.so       0     0       0644 u:object_r:system_lib_file:s0
   # Here are some examples:
   # set_perm_recursive  $MODPATH/system/lib       0     0       0755      0644
